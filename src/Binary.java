@@ -19,8 +19,18 @@ public class Binary {
 		
 		System.out.println("\nEnter your key");
 		key = input.nextInt();
+		int val = binary(arr, first, last, key);
+		System.out.println("This is the element: " + val);
 		
-		System.out.println(binary(arr, first, last, key));
+		System.out.println("\nEnter how many times you want to double that value: ");
+		int num = input.nextInt();
+		
+		int result = 1;
+		for(int i = 0; i < num; i++) {
+			result *= val;
+		}
+		
+		System.out.println("The result will be: " + result);
 		
 	}
 	
